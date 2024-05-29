@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Art Web</title>
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="Header">
+        <a  href="/">
+            <img class="logo" src="media/icon.png" alt="logo">
+        </a>
+        <H2 class="title">Ascii art web</H2>
+    </div>
+
+    <!--  -->
+    <div class="inputs">
+        <table class="table">
+            <tr id="table-title">
+                <td colspan="2" >Use this table to see the result</td>
+            </tr>
+            <tr >
+                <td>
+                    <form id="choices" action="/ascii-art" method="POST">
+                        <label for="Templates">Template :</label>
+                        <select name="Templates" id="Templates">
+                            <option value="standard">standard</option>
+                            <option value="shadow">shadow</option>
+                            <option value="thinkertoy">thinkertoy</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="text">Write your text :</label>
+                        <br>
+                        <textarea name="text" id="text"></textarea>
+                        <br>
+                        <br>
+                        <input type="reset" value="reset">
+                        <input type="submit" value="submit">
+                    </form>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <!--  -->
+    <div class="display" name="display">
+        
+    </div>
+</body>
+</html>

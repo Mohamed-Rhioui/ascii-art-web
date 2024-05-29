@@ -1,0 +1,30 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: solid 0.1rem #136DFA;
+    border-radius: 10%;
+}
+.Header .logo{
+    width: 100px;
+}
+.Header .title{
+    color: #136DFA;
+    text-transform: capitalize ;
+}
+.table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 520px;
+    text-align: center;
+    padding: 10px;
+}
+#table-title{
+    text-align: center;
+    font-weight: bold;
+}
+.display{
+    border: 0.3px solid;
+    margin: 20px;
+}
