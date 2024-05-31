@@ -79,13 +79,13 @@ func main() {
 		text := details.Message
 		banner := details.Banner
 		// do something with details
-		fmt.Println(banner)
-		fmt.Print(AsciiArtFs(text, banner))
+		// fmt.Fprintln(w, banner)
+		fmt.Fprint(w, AsciiArtFs(text, banner))
 
-		tmpl.Execute(w, struct{ Success bool }{true})
-		for _, v := range AsciiArtFs(text, banner) {
-			fmt.Fprint(w, string(v))
-		}
+		// tmpl.Execute(w, struct{ Success bool }{true})
+		// for _, v := range AsciiArtFs(text, banner) {
+		// 	fmt.Fprintln(w, string(v))
+		// }
 	})
 
 	// http.Handle("/", http.FileServer(http.Dir("./static")))
